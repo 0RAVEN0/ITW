@@ -5,31 +5,54 @@
     margin-bottom: 0;
 }
 body{
-    margin: 0;
+    margin: 0
 }
 
 a{
     text-decoration: none;
 }
 
-.content{
-    height: 400px;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+h2{
+    color: #212529;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+
+/*-----------------------NAVBAR---------------------*/
+#navbar{
+    background: url('img/bg.jpg');
+    background-size: cover;
+    /*Otočí mi to obrázok aby splýval s obrázkom z class .dark*/
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
 }
 
 .navbar-nav{
     list-style-type: none;
     overflow: hidden;
     text-align: center;
-    padding-top: 30px;
+    padding-left: 250px;
+    /*Otočí to naspäť text aby bol čitateľný.*/
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.navbar-nav li a img{
+    position: relative;
+    top: -30px;
 }
 
 .navbar-nav li{
     float: left;
-    padding-left: 50px;
-    padding-top: 20px;
+    padding-left: 40px;
+    padding-top: 50px;
     text-transform: uppercase;
     font-size: 13px;
     display: inline;
@@ -39,24 +62,35 @@ a{
     color: rgba(255, 255, 255, 0.8);
 }
 
+/*-----------------------DARK SECTION---------------------*/
 .dark{
-    color: #ffffff;
+    background: url('img/bg.jpg');
+    background-size: cover;
+    padding: 140px 0;
     text-align: center;
     font-weight: lighter;
-    background-image: url("img/bg.jpg");
-    background-repeat: no-repeat;
+    color: #ffffff;
 }
 
 .dark h1{
-    font-size: 62px;
     font-weight: lighter;
+    font-size: 62px;
+    text-align: center;
+}
 
+.dark h2{
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 62px;
+    text-transform: none;
+    text-align: center;
 }
 
 .dark .sub-heading {
     font-size: 16px;
     padding: 20px 400px 50px 375px;
     color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
 }
 
 .dark p a{
@@ -74,57 +108,49 @@ a{
     color: #212529;
 }
 
-#section-home {
-    padding-top: 150px;
-    padding-bottom: 200px;
-}
+/*-------------------------SECTION ABOUT--------------------------*/
 
-.img-fluid{
+#section-about{
+    padding: 70px 200px 50px 250px;
+}
+.img-fluid {
     float: left;
     width: 33.33%;
-    padding: 10px;
+    padding-right: 30px;
 }
 
-h2{
-    color: #212529;
-    font-size: 32px;
-    text-transform: uppercase;
-    font-weight: normal;
+.photos{
+    padding-bottom: 350px ;
 }
 
 .descript{
     color: #868e96;
-    padding-left: 660px;
+
 }
 .descript h2{
-
-
-    padding-top: 5px;
-    padding-right: 100px;
-
+    font-size: 25px;
 }
 .descript p{
-    padding-top: 25px;
-    font-size: 15px;
+    padding-top: 15px;
+    font-size: 13px;
     line-height: 1.5;
 }
-
 .linkdown{
     color: red;
 }
 
+/*-----------------------------SECTION MENU----------------------------*/
 #section-menu{
-    padding-top: 300px;
-    padding-bottom: 250px;
+    padding: 50px 100px 500px 250px;
 }
 
 #section-menu h2{
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .tabs{
-    padding-left: 310px;
+    padding-left: 300px;
 
 }
 .tabs li{
@@ -176,18 +202,126 @@ h2{
     padding-bottom: 50px;
 }
 
-.dark h2{
-    color: #ffffff;
-    text-align: center;
-    font-weight: lighter;
-    font-size: 64px;
-    text-transform: none;
+/*------------------------SECTION GALLERY--------------------------*/
+#section-gallery{
+    padding: 50px 100px 100px 250px;
 }
-
 #section-gallery h2{
-    text-align: center;
+    padding-left: 350px;
     padding-bottom: 50px;
     padding-top: 100px;
+}
+
+/*------------------------SECTION WHAT PEOPLE SAY--------------------------*/
+#section-testimonials{
+    padding: 100px 100px 400px 200px;
+    background: #e4f8f4;
+
+}
+#section-testimonials h2{
+    color: #212529;
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 50px;
+
+}
+
+.testimonial{
+    float: left;
+    width: 33.3%;
+}
+
+.testimonial blockquote{
+    color: #212529;
+    font-family: Crimson Text;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+    line-height: 1.75;
+}
+
+.rounded-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name{
+    font-size: 13px;
+    color: #212529;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.nick{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+
+#section-events{
+    padding: 100px 100px 100px 100px;
+}
+
+#section-events h2{
+    color: #212529;
+    text-align: center;
+    font-weight: lighter;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+.card-deck{
+    padding-left: 100px;
+}
+.card{
+    float: left;
+    width: 33.3%;
+}
+.card-img-top{
+    /*float: left;*/
+    width: 300px;
+    height: 150px;
+}
+
+.card-body{
+    background: #ffffff;
+    width: 300px;
+    height: 200px;
+
+}
+
+.card-body small{
+    color: #868e96;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.card-body a{
+    color: #ee0427;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.card-body p{
+    color: #868e96;
+    font-size: 12px;
+}
+
+footer{
+    padding: 100px 100px 100px 100px;
+    text-align: center;
+    color: #868e96;
+    font-size: 13px;
+}
+
+footer a{
+    color: #212529;
 }
 
 
