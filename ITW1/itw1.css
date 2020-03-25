@@ -1,11 +1,28 @@
+/**********************************************************************/
+/*                   Autor = Romana Dzubarova                         */
+/*                   Login = xdzuba00                                 */
+/*                   Date = 23.03.2020                                */
+/**********************************************************************/
+
 *{
     box-sizing: border-box;
     font-family: Montserrat;
     margin-top: 0;
     margin-bottom: 0;
 }
-body{
-    margin: 0
+
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    height: 95vh;
+    background-image: url("img/bg.jpg");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+}
+
+#main{
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 a{
@@ -19,121 +36,129 @@ h2{
     font-weight: normal;
 }
 
-
+.content{
+    max-width: 1140px;
+    padding: 0 15px 0 15px;
+    text-align: center;
+}
 
 /*-----------------------NAVBAR---------------------*/
 #navbar{
-    background: url('img/bg.jpg');
-    background-size: cover;
-    /*Otočí mi to obrázok aby splýval s obrázkom z class .dark*/
-    -moz-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
-
 .navbar-nav{
     list-style-type: none;
     overflow: hidden;
-    text-align: center;
-    padding-left: 250px;
-    /*Otočí to naspäť text aby bol čitateľný.*/
-    -moz-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
+    padding-inline-start: 0px;
 }
-
-.navbar-nav li a img{
+.navbar-nav li a img {
     position: relative;
-    top: -30px;
+    top: -20px;
 }
-
 .navbar-nav li{
     float: left;
-    padding-left: 40px;
-    padding-top: 50px;
+    padding: 30px 10px 0px 10px;
     text-transform: uppercase;
     font-size: 13px;
     display: inline;
+    letter-spacing: 0.2em;
 }
-
+@media (max-width: 500px) {
+    .navbar-nav li{
+        font-size: 10px;
+    }
+}
 .navbar-nav li a{
     color: rgba(255, 255, 255, 0.8);
 }
 
-/*-----------------------DARK SECTION---------------------*/
-.dark{
-    background: url('img/bg.jpg');
-    background-size: cover;
-    padding: 140px 0;
+/*-----------------------SECTION HOME AND DARK SECTION---------------------*/
+#section-home{
+    height: 95vh;
+    padding: 150px 0;
     text-align: center;
+    margin: 50px;
+}
+.dark {
+    display: flex;
+    justify-content: center;
     font-weight: lighter;
     color: #ffffff;
+    height: 350px;
 }
-
 .dark h1{
     font-weight: lighter;
     font-size: 62px;
     text-align: center;
 }
-
 .dark h2{
+    padding-top: 100px;
     color: #ffffff;
     font-weight: lighter;
     font-size: 62px;
     text-transform: none;
     text-align: center;
 }
-
-.dark .sub-heading {
+.sub-heading {
     font-size: 16px;
-    padding: 20px 400px 50px 375px;
+    width: 470px;
+    display: flex;
+    margin: auto;
+    padding-bottom: 50px;
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.5;
 }
-
 .dark p a{
     color: #ffffff;
     font-size: 13px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     border-style: solid;
     border-width: 0.8px;
     border-color: rgba(255, 255, 255, 0.8);
     padding: 15px 20px;
 }
-
 .dark p a:hover{
     background-color: #ffffff;
     color: #212529;
 }
 
 /*-------------------------SECTION ABOUT--------------------------*/
-
 #section-about{
-    padding: 70px 200px 50px 250px;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: #f8f9fa;
 }
-.img-fluid {
+.img-fluid{
     float: left;
     width: 33.33%;
-    padding-right: 30px;
+    padding: 30px;
 }
-
-.photos{
-    padding-bottom: 350px ;
+@media (max-width: 350px) {
+    .img-fluid{
+        width: 50%;
+    }
 }
-
 .descript{
+    float: left;
+    width: 33.33%;
     color: #868e96;
-
 }
 .descript h2{
     font-size: 25px;
+    letter-spacing: 0.2em;
+    font-weight: lighter;
+    padding: 30px 0;
+    text-align: left;
 }
 .descript p{
-    padding-top: 15px;
     font-size: 13px;
     line-height: 1.5;
+    text-align: left;
+    padding: 5px 100px 5px 0;
 }
 .linkdown{
     color: red;
@@ -141,96 +166,115 @@ h2{
 
 /*-----------------------------SECTION MENU----------------------------*/
 #section-menu{
-    padding: 50px 100px 500px 250px;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
 }
-
 #section-menu h2{
     text-align: center;
     padding-bottom: 80px;
+    font-weight: lighter;
+    letter-spacing: 0.2em;
 }
-
 .tabs{
-    padding-left: 300px;
-
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
 }
 .tabs li{
-    float: left;
-    padding-left: 20px;
-    font-size: 13px;
     display: inline;
+    float: left;
+    padding-right: 30px;
+    font-size: 13px;
 }
-
 .btn{
     color: #868e96;
     font-size: 13px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     border-style: solid;
     border-width: 0.8px;
     border-color: #868e96;
     padding: 15px 20px;
 }
-
 .active{
     border-color: #212529;
     color: #212529;
 }
-
+.menucols{
+    display: inline-block;
+    padding-bottom: 50px;
+}
 .menucols ul{
     list-style-type: none;
-    padding-top: 70px;
-    padding-bottom: 300px;
     float: left;
     width: 50%;
 }
-
+@media (max-width: 500px) {
+    .menucols ul {
+        width: 100%;
+    }
+}
 .menuitem{
     float: left;
+    padding-bottom: 20px;
+    padding-right: 70px;
 }
 .menuitem h3{
     color: #212529;
     font-weight: normal;
-    padding-bottom: 10px;
+    font-size: 15px;
+    text-align: left;
+    padding-bottom: 5px;
 }
 .menuitem p {
     color: #868e96;
     font-weight: normal;
-    padding-bottom: 30px;
+    font-size: 13px;
+    text-align: left;
 }
-
 .price{
     float: right;
-    padding-bottom: 50px;
+    font-size: 15px;
 }
 
 /*------------------------SECTION GALLERY--------------------------*/
 #section-gallery{
-    padding: 50px 100px 100px 250px;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 100px 0 100px 0;
 }
 #section-gallery h2{
-    padding-left: 350px;
-    padding-bottom: 50px;
-    padding-top: 100px;
+    font-weight: lighter;
+    letter-spacing: 0.2em;
+    padding-bottom: 30px;
 }
 
 /*------------------------SECTION WHAT PEOPLE SAY--------------------------*/
 #section-testimonials{
-    padding: 100px 100px 400px 200px;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
     background: #e4f8f4;
-
 }
 #section-testimonials h2{
     color: #212529;
     text-align: center;
     font-weight: lighter;
-    padding-bottom: 50px;
-
+    letter-spacing: 0.2em;
 }
-
+#section-testimonials blockquote::before {
+    content: "\201C";
+    color:#474f56;
+    height: 80px;
+    font-size: 80px;
+    display:block;
+}
 .testimonial{
     float: left;
     width: 33.3%;
 }
-
 .testimonial blockquote{
     color: #212529;
     font-family: Crimson Text;
@@ -240,16 +284,15 @@ h2{
     margin-inline-end: 20px;
     line-height: 1.75;
 }
-
 .rounded-circle {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    /*Aby to bolo v strede.*/
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
 .name{
     font-size: 13px;
     color: #212529;
@@ -263,63 +306,74 @@ h2{
     text-align: center;
 }
 
-
+/*-------------------------SECTION EVENTS--------------------------*/
 #section-events{
-    padding: 100px 100px 100px 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+    padding: 100px 0 100px 0;
 }
-
 #section-events h2{
     color: #212529;
     text-align: center;
     font-weight: lighter;
     padding-bottom: 50px;
-    padding-left: 50px;
+    letter-spacing: 0.2em;
 }
-
 .card-deck{
-    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+.card-deck > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
 }
 .card{
-    float: left;
-    width: 33.3%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+@media (min-width: 350px) {
+    .card{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 .card-img-top{
-    /*float: left;*/
-    width: 300px;
+    width: 265px;
     height: 150px;
 }
-
 .card-body{
-    background: #ffffff;
-    width: 300px;
+    width: 255px;
     height: 200px;
-
+    padding: 20px 20px 20px 20px;
+    text-align: left;
 }
-
 .card-body small{
     color: #868e96;
     text-transform: uppercase;
     font-size: 10px;
 }
-
 .card-body a{
     color: #ee0427;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: lighter;
 }
-
 .card-body p{
     color: #868e96;
-    font-size: 12px;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
+/*-------------------------SECTION FOOTER--------------------------*/
 footer{
-    padding: 100px 100px 100px 100px;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: #f8f9fa;
     text-align: center;
     color: #868e96;
     font-size: 13px;
 }
-
 footer a{
     color: #212529;
 }
