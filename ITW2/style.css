@@ -1,0 +1,243 @@
+/**********************************************************************/
+/*                   Autor = Romana Dzubarova                         */
+/*                   Login = xdzuba00                                 */
+/*                   Date = 13.04.2020                                */
+/**********************************************************************/
+
+*{
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    background-image: url("img/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 575.33px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: normal;
+    font-family: 'Lora';
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+    letter-spacing: 0.2em;
+    padding-bottom: 50px;
+    color: #ffffff;
+}
+h1 a{
+    color: #ffffff;
+}
+
+span{
+    color: #000000;
+}
+
+section{
+    border-top: 0.5px solid darkgrey;
+    width: auto;
+}
+p{
+    font-size: 16px;
+}
+
+
+/*.head-text{
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}*/
+
+/*-----------------------NAVBAR---------------------*/
+.logo{
+    font-family: 'Arizonia';
+    float: left;
+    padding: 30px;
+}
+
+.navbar{
+    width: 100%;
+}
+.navbar ul{
+    float: right;
+}
+
+.navbar-nav{
+    text-align: right;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navbar li{
+    float: left;
+    padding: 40px 10px 0 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    display: inline-block;
+    letter-spacing: 0.2em;
+
+}
+
+.navbar li a{
+    color: #ffffff;
+}
+
+.navbar li a:hover{
+    color: darkgrey;
+}
+
+.navbar li a:active{
+    background-color: white;
+    color: #000000;
+}
+
+#welcome-text{
+    text-transform: uppercase;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 600px;
+    text-align: center;
+}
+
+#welcome-text h1{
+    font-size: 50px;
+}
+
+.content{
+    max-width: 1140px;
+    height: 30em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/****************************SECTION-ABOUT********************************/
+#section-about {
+    font-weight: lighter;
+}
+
+.text-body{
+    position: absolute;
+    left: 45%;
+    top: 10%;
+}
+
+.text-body h1{
+    text-transform: uppercase;
+}
+
+.sub-heading {
+    width: 470px;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.5;
+}
+
+.image-about img{
+    position: absolute;
+    top: 35%;
+    margin-top: -75px;
+    left: 20%;
+    margin-left: -50px;
+    float: left;
+    height: 300px;
+    width: 200px;
+    box-shadow: 5px 5px 5px darkgrey;
+}
+
+/****************************SECTION-EDUCATION********************************/
+#section-education{
+    font-weight: lighter;
+}
+
+.content ul{
+    list-style-type: none;
+}
+
+#section-education .content ul li{
+    float: left;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.left-side{
+    font-family: 'Montserrat';
+    float: left;
+    padding-right: 20px;
+    border-right: 0.5px solid darkgrey;
+    padding-bottom: 30px;
+    padding-top: 5px;
+}
+.left-side h3{
+    color: #5f3301;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid darkgrey;
+}
+
+.left-side h4{
+    color: #000000;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.left-side p {
+    color: darkgrey;
+}
+.about{
+    float: right;
+    padding: 0 35px;
+}
+
+/****************************SECTION-EDUCATION********************************/
+#section-experience{
+    font-weight: lighter;
+}
+
+#section-experience .content ul li{
+    float: left;
+    width: 33.33%;
+}
+
+/****************************SECTION-EDUCATION********************************/
+#section-skills{
+    font-weight: lighter;
+}
+
+.image-skills ul li{
+    float: left;
+    width: 20%;
+    padding-right: 30px;
+}
+
+.image-skills ul img{
+    width: 100px;
+    height: 150px;
+}
+
+/****************************SECTION-EDUCATION********************************/
+#section-interest{
+    font-weight: lighter;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+}
+
+
