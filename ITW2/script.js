@@ -9,7 +9,7 @@ window.onscroll = function () {
         navbar[0].style.top = 0;
         navbar[0].style.zIndex = 1;
         //navbar.addClass('fixed');
-        if(window.pageYOffset > 530){
+        if(window.pageYOffset > 450){
             navbar[0].style.background = "rgb(169, 169, 169)";
             navbar[0].style.boxShadow = "5px 5px 15px #494c53";
             header[0].style.color = "#000000";

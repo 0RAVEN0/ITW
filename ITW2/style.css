@@ -10,6 +10,40 @@
     margin-bottom: 0;
 }
 
+@media screen and (max-width: 640px){
+    #section-education .content ul li{
+        width: 100% !important;
+    }
+
+    #section-experience .content ul li{
+        width: 100% !important;
+    }
+
+    #section-interest .content ul li{
+        width: 100% !important;
+    }
+
+    .content{
+        height: 40em !important;
+    }
+
+    .about{
+        padding-left: 20px;
+    }
+
+    .text-body{
+        left: 50% !important;
+    }
+
+    .sub-heading{
+        width: 200px !important;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    /* some CSS here */
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -20,7 +54,6 @@ body {
     background-image: url("img/bg.png");
     background-repeat: no-repeat;
     background-size: 100% 575.33px;
-
 }
 
 a{
@@ -165,12 +198,14 @@ p{
 
 .content ul{
     list-style-type: none;
+    width: 100%;
+    padding-top: 50px;
 }
 
 #section-education .content ul li{
     float: left;
     width: 50%;
-    padding-right: 20px;
+    padding-right: 30px;
 }
 
 .left-side{
@@ -189,19 +224,36 @@ p{
     border-bottom: 0.5px solid darkgrey;
 }
 
+.small_h h3{
+    width: 200px;
+    color: #5f3301;
+    font-size: 15px;
+}
+
 .left-side h4{
     color: #000000;
     font-weight: lighter;
     font-size: 20px;
     padding: 10px 0;
+    width: 250px;
+}
+
+.small_h h4{
+    width: 220px;
 }
 
 .left-side p {
     color: darkgrey;
+    width: 250px;
 }
 .about{
-    float: right;
-    padding: 0 35px;
+    float: left;
+    width: 220px;
+}
+.about img {
+    padding-left: 30px;
+    width: 150px;
+    height: 200px;
 }
 
 /****************************SECTION-EDUCATION********************************/
@@ -235,9 +287,56 @@ p{
     font-weight: lighter;
 }
 
+#section-interest .content ul li{
+    float: left;
+    width: 33.33%;
+}
+
+.inter{
+    position: relative;
+    left: 10%;
+    width: 500px;
+}
+
 #footer{
     display: flex;
     justify-content: center;
+}
+
+.fa {
+    padding: 20px;
+    /*margin: 5px 10px;*/
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    width: 5px;
+    height: 5px;
+
+    text-align: center;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #333333;
+    color: white;
+}
+
+.fa-google {
+    background: #333333;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #333333;
+    color: white;
+}
+
+.fa-instagram {
+    background: #333333;
+    color: white;
 }
 
 
