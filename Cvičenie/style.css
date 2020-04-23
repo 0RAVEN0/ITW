@@ -1,0 +1,392 @@
+* {
+    font-family: 'Ubuntu', serif;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom:0;
+}
+
+body{
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    color: #b15e23;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-bottom: 15px;
+
+}
+
+h4{
+    float: left;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+header{
+    height: 200px;
+    background-image: url('footer_bg.gif');
+    background-size: inherit;
+}
+
+@media screen and (max-width: 575px) {
+    .toggle{
+        display: block !important;
+    }
+
+    .active{
+        display: block !important;
+        float: none !important;
+    }
+
+    .navbar ul li{
+        display: none;
+        text-align: left;
+    }
+
+    .navbar ul .dissap{
+        display: inherit !important;
+        float: none !important;
+    }
+
+    .small_text{
+        display: none !important;
+    }
+
+}
+
+.small_text{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    .navbar ul .dissap{
+        display: none;
+    }
+
+    .navbar ul li:hover .small_text{
+        background: rgba(0,0,0,0.8);
+        display: inherit;
+        z-index: 1;
+        position: absolute;
+        top: 100%;
+        text-align: center;
+        border-radius: 6px;
+        padding: 10px 0;
+        width: 150px;
+    }
+
+    .leftsub{
+        float: none !important;
+        width: 100% !important;
+    }
+
+    .subpart{
+        width: 100% !important;
+    }
+
+    .subpart .submin{
+        float: none !important;
+    }
+
+    .right{
+        width: 100% !important;
+        padding-right: 10px !important;
+    }
+
+    .konus{
+        width: 100% !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .souprm{
+        width: 100% !important;
+        padding-top: 20px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .navbar ul .dissap{
+        display: none;
+    }
+
+    .navbar ul li:hover .small_text{
+        background: rgba(0,0,0,0.8) !important;
+        display: inherit !important;
+        z-index: 1;
+        position: absolute;
+        top: 100%;
+        text-align: center;
+        border-radius: 6px;
+        padding: 10px 0;
+        width: 150px;
+    }
+
+    .subpart{
+        width: 100% !important;
+    }
+
+    .subpart .submin{
+        float: none !important;
+    }
+
+    .right{
+        padding-bottom: 170px !important;
+    }
+
+    .leftsub{
+        width: 58.33% !important;
+    }
+
+    .right{
+        width: 41.66% !important;
+        padding-right: 10px !important;
+    }
+
+    p{
+        padding-right: 10px;
+    }
+
+    table{
+        width: 58.33% !important;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .middle{
+        max-width: 1200px;
+    }
+}
+
+.pozadie{
+    padding-top: 20px;
+}
+
+.pozadie h1 a span{
+    color: white;
+    font-size: 4rem;
+    margin-left:20px;
+}
+
+.navbar{
+    background: #b15e23;
+    position: absolute;
+    width: 100%;
+}
+.navbar ul{
+    padding-inline-start: 0;
+}
+
+.navbar ul a{
+    color:white;
+}
+
+.navbar ul li{
+    float: left;
+    list-style-type:none;
+    padding: 1rem;
+    font-size: 16px;
+    color: white;
+}
+
+.navbar ul .dissap{
+    float: right;
+    padding-left: 10px;
+}
+
+.navbar ul li:hover{
+    background: #3c1f0a;
+}
+
+.navbar .fa-navbar{
+    display: none;
+}
+
+.toggle{
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 10px 20px;
+    display: none;
+}
+
+.fix{
+    z-index: 1;
+    top: 0;
+    position: fixed;
+}
+
+#opredmetu{
+    padding: 30px 0 10px 0;
+    background: linear-gradient(to bottom, white, lightgrey);
+}
+
+p {
+    padding-bottom: 20px;
+    margin-left: 20px;
+    color: #656565;
+    font-size: 14px;
+}
+
+.leftsub{
+    display: inline-block; /*nepodstatne asi*/
+    width: 66.66%;
+    float: left;
+    padding-right: 20px;
+}
+
+.subpart{
+    display: inline-block; /*nepodstatne asi*/
+    width: 49%;
+}
+
+.subpart img{
+    display: inline-block; /*nepodstatne asi*/
+    width: 70px;
+    height: 60px;
+    padding-left: 20px;
+}
+
+.subpart .submin{
+    display: inline-block; /*nepodstatne asi*/
+    width: 70%;
+    float: right;
+    overflow-wrap: break-word;
+}
+
+.subpart .submin a{
+    display: block;
+    color: #3c1f0a;
+    font-weight: bold;
+    border-bottom: 2px dotted #b15e23;
+    margin-left: 20px;
+    padding: 0 0 10px 0;
+}
+
+.subpart .submin p{
+    padding-top: 10px;
+}
+
+table{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    width: 95%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+table th, td{
+    padding: 0px 10px;
+    font-size: 14px;
+}
+
+table th{
+    border-top: 2px dotted black;
+    border-bottom: 2px solid black;
+    border-left: 2px dotted black;
+    border-right: 2px solid black;
+    background-color: #d5a17c;
+    color: #656565;
+}
+
+table td{
+    border-top: 2px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.middle{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section h2{
+    padding-top: 30px !important;
+}
+
+.right{
+    display: inline-block; /*asi na nic*/
+    width: 33.33%;
+    padding-bottom: 10px;
+    background: linear-gradient(to right, lightgrey , white);
+}
+
+.sub{
+    border-bottom: 2px dotted #b15e23;
+    padding: 10px 20px 10px 0;
+    margin-left: 20px;
+}
+
+.sub a {
+    display: block;
+    color: #3c1f0a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sub p {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+    width: 70%;
+}
+
+footer{
+    display: block;
+    background-image: url('footer_bg.gif');
+    background-size: inherit;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.konus{
+    display: inline-block;
+    width: 50%;
+}
+
+.souprm{
+    display: inline-block;
+}
+
+footer h2{
+    color: white;
+}
+
+footer a{
+    color: #b15e23;
+}
+
+footer li{
+    width: 275px;
+    margin-left: 20px;
+}
+
+footer li span{
+    float:right;
+}
+
+.kuimg{
+    list-style-type: none;
+    padding: 0;
+}
+
+.spsuc{
+    list-style-image:url('footer_list_bullet.gif');
+    padding-inline-start: 15px;
+}
+
